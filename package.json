@@ -1,0 +1,29 @@
+{
+  "name": "node-f8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "hh",
+    "start": "nodemon --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidTran050204/node-f8.git"
+  },
+  "keywords": [
+    "Vy5435431"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidTran050204/node-f8/issues"
+  },
+  "homepage": "https://github.com/DavidTran050204/node-f8#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
