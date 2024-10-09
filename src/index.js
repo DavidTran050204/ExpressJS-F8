@@ -27,11 +27,7 @@ app.set ('views',path.join(__dirname, 'resources','views'))
 app.get('/', (req, res) => {
   res.render('home')
 })
-app.get('/news', (req, res) => {
-  res.render('news')
-})
 app.get('/search', (req, res) => {
-  console.log(req.query.Search);
   res.render('search')
 })
 app.post('/search', function (req, res) {
