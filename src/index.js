@@ -4,7 +4,7 @@ const port = 3000
 const morgan = require('morgan')
 const handlebars =require("express-handlebars") // import thu vien handerbars trong express js
 const path = require('path')
-
+const route = require ('./routes')
 //xử lý dữ liệu từ form data
 app.use(express.urlencoded({
   extended:true
@@ -24,19 +24,10 @@ app.set('view engine', 'hbs');
 
 app.set ('views',path.join(__dirname, 'resources','views'))
 //duong dan toi trang chu
-app.get('/', (req, res) => {
-  res.render('home')
-})
-app.get('/search', (req, res) => {
-  res.render('search')
-})
-app.post('/search', function (req, res) {
-  console.log(req.body);
-  
-  res.send('')
-  
-  
-})
+
+// khoi tao tuyen duong
+route(app)
+
 app.listen(port, () => {
   console.log(`Click at here http://localhost:${port}`)
 })
