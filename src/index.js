@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const port = 3000
-const morgan = require('morgan')
 const handlebars =require("express-handlebars") // import thu vien handerbars trong express js
 const path = require('path')
 const route = require ('./routes')
