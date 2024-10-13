@@ -1,7 +1,9 @@
+
 const newRouter = require ('./new')
-    
+const homeRouter = require ('./home')
 function route(app){
     app.use('/news',newRouter)
+    app.use('/home',homeRouter)
     // app.get('/', (req, res) => {
     //     res.render('home')
     //   })
