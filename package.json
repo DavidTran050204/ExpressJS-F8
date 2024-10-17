@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "hh",
-    "watch" : "node-sass --watch  src/resources/scss/ --output src/public/css/",
+    "watch": "node-sass --watch  src/resources/scss/ --output src/public/css/",
     "start": "nodemon --inspect src/index.js"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "express": "^4.21.0",
     "express-handlebars": "^8.0.1",
     "hbs": "^4.2.0",
+    "mongoose": "^8.7.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

@@ -1,9 +1,9 @@
-class siteController {
+class SiteController {
     index(req,res){
-res.render('home')
+     res.render('home')
     }
     search(req,res){
-res.render('search')
+    res.render('search')
     }
 }
-module.exports=new siteController
+module.exports=new SiteController
